@@ -1,9 +1,9 @@
-// backend/routes/testRoute.js
 import express from 'express';
+
 const router = express.Router();
 
-router.get('/ping', (req, res) => {
-  res.send('Server is alive!');
+router.get('/', (req, res) => {
+  res.json({ message: 'Backend is connected with frontend successfully!' });
 });
 
 export default router;
